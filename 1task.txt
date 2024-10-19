@@ -1,0 +1,76 @@
+### Alapvető Git parancsok
+
+**1. git config**
+   - **Használat**: Konfigurálja a felhasználói információkat, amelyeket minden helyi tárolóban használnak.
+   - **Parancs**:
+     ```
+     git config --global user.name "felhasználó_neve"
+     git config --global user.email "email@cim.hu"
+     ```
+
+**2. git init**
+   - **Használat**: Új Git tároló inicializálása helyileg.
+   - **Parancs**:
+     ```
+     git init
+     ```
+
+**3. git clone**
+   - **Használat**: Létrehoz egy helyi másolatot egy távoli tárolóból.
+   - **Parancs**:
+     ```
+     git clone [URL]
+     ```
+
+**4. git add**
+   - **Használat**: Hozzáadja a munkakönyvtárból a fájlokat a színpadhoz.
+   - **Parancs**:
+     ```
+     git add [fájlnév]
+     git add .  # Minden fájlt hozzáad
+     ```
+
+**5. git commit**
+   - **Használat**: Rögzíti a tárolóban tett változásokat.
+   - **Parancs**:
+     ```
+     git commit -m "Rövid leírás a commitról"
+     ```
+
+**6. git status**
+   - **Használat**: Megjeleníti a munkakönyvtár és a színpad állapotát.
+   - **Parancs**:
+     ```
+     git status
+     ```
+
+**7. git push**
+   - **Használat**: Feltölti a helyi ág tartalmát a távoli tárolóba.
+   - **Parancs**:
+     ```
+     git push origin [ág_név]
+     ```
+
+**8. git pull**
+   - **Használat**: Letölti és integrálja a távoli szerverről érkező változásokat a helyi tárolóba.
+   - **Parancs**:
+     ```
+     git pull
+     ```
+
+**9. git branch**
+   - **Használat**: Kezeli a tároló ágait.
+   - **Parancsok**:
+     ```
+     git branch            # Ágak listázása
+     git branch [új_ág]  # Új ág létrehozása
+     git branch -d [ág_név]  # Ág törlése
+     ```
+
+**10. git checkout**
+    - **Használat**: Ágak közötti váltás vagy a munkakönyvtár fájljainak helyreállítása.
+    - **Parancs**:
+      ```
+      git checkout [ág_név]
+      git checkout -b [új_ág]  # Új ág létrehozása és váltás
+      ```
